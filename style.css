@@ -5,6 +5,10 @@
       
 }
 
+a {
+    text-decoration: none;
+}
+
 @font-face {
     font-family: 'boogle-regular';
     src: url('fonts/BogleWeb_subset-Regular.ttf') ;
@@ -223,15 +227,16 @@ html , body{
 .nav-rec-cont{
     margin-left: 7%; 
     /* background-color: aqua; */
-   
+}
+
+.nav-rec a{
+    color: white;
 }
 
 .rec-p1{
     font-weight: 200;
     font-size: 0.9vw;
     /* background-color: red; */
-    margin-top: 3%;
-
 }
 
 .rec-p2{
@@ -239,8 +244,6 @@ html , body{
     font-weight: 700;
     /* margin-top: 5px; */
     /* background-color: orange; */
-    padding-bottom: 4%;
-    font-family: boogle-bold;
 }
 
 
@@ -2362,7 +2365,6 @@ html , body{
 /* Nav Record */ /* Nav SignUp */
 
 .nav-rec{
- 
     display: none;
 
 }
