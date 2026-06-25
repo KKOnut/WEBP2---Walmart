@@ -1,1 +1,1 @@
-database_config/ #SENSITIVE DATA	
+secrets/supabase.txt #database information
