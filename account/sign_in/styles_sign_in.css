@@ -60,18 +60,3 @@ img {
     margin: 100px auto;
     padding: 40px;
 }
-
-/* FOOTER */ 
-
-
-.info-space-area{
-    display: flex;
-    flex-direction: column;
-    /* background-color: #074f9b; */
-}
-
-.footer-space-area{
-    width: 100%;
-    background-color: #074f9b;
-    margin-top: 2%;
-}
