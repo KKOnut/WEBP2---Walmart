@@ -224,6 +224,13 @@ html , body{
     font-size: 1vw;
 }
 
+.rec-cart-p{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    font-size: 0.9vw;
+}
+
 .nav-rec-cont{
     margin-left: 7%; 
     /* background-color: aqua; */
