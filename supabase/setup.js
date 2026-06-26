@@ -1,9 +1,9 @@
-import { env } from 'process';
+require('dotenv').config()
 import { createClient } from '@supabase/supabase-js'
 
 const supabase = createClient(
-    env.SUPABASE_URL,
-    env.SUPABASE_PUBLISHABLE_KEY
+    process.env.SUPABASE_URL,
+    process.env.SUPABASE_PUBLISHABLE_KEY
 )
 
 async function setupDatabase() {
