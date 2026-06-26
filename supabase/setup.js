@@ -1,35 +1,29 @@
-require('dotenv').config()
+import 'dotenv/config'
 import { createClient } from '@supabase/supabase-js'
+import { url } from 'node:inspector'
+
+const URL = process.env.SUPABASE_URL
+const KEY = process.env.SUPABASE_PUBLISHABLE_KEY
 
 const supabase = createClient(
-    process.env.SUPABASE_URL,
-    process.env.SUPABASE_PUBLISHABLE_KEY
+    URL,
+    KEY
 )
 
-async function setupDatabase() {
-  // Create tables
-  const { error: sqlError } = await supabase.sql(`
-    CREATE TABLE IF NOT EXISTS profiles (
-      id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-      email TEXT UNIQUE NOT NULL,
-      full_name TEXT
-    );
-  `)
-  if (sqlError) throw sqlError
+const { data, error } = await supabase
+    .from('credential')
+    .insert([
+    {
+        email: '3456@example.com',
+        first_name: 'Lalisa',
+        last_name: 'Mamisa',
+        password: '1234'
+    }
+    ])
 
-  // Insert a test row
-  const { error: insertError } = await supabase
-    .from('profiles')
-    .insert({ email: 'test@test.com', full_name: 'Test User' })
-
-  if (insertError) throw insertError
-
-  // Read back
-  const { data, error: readError } = await supabase
-    .from('profiles')
-    .select('*')
-
-  console.log('Setup done. Current data:', data)
+if (error) {
+    console.error('Error : ', error)
 }
-
-setupDatabase()
+else {
+    console.log('Data sucessfully inserted')
+}
