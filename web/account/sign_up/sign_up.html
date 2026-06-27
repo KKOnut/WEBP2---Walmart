@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="styles_sign_up.css">
 </head>
 <body>
+    <script src="/database/account.js"></script>
     <header>
         <img src="../../Images/walmart-logo.webp" alt="" class="icon">
         <br>
@@ -18,26 +19,26 @@
         <form action="" class="form-container">
             <div class="input-group">
                 <label for="lbl_email">Email</label>
-                <input type="text">
+                <input type="text" id="email">
             </div>
             <div class = "input-group">
                 <label for="first_name">First Name</label> 
-                <input type="text">
+                <input type="text" id="first_name">
             </div>
 
             <div class="input-group">
                 <label for="last_name">Last Name</label>
-                <input type="text">
+                <input type="text" id="last_name">
             </div>
             
-
             <div class="input-group">
                 <label for="lbl_password">Create a Password*</label>
-                <input type="text">
+                <input type="text" id="password">
             </div>
 
             <div class = action-button>
-                <a>Create Account</a> <br><br><br>
+                <a onclick="insert_data()" href="#">Create Account</a>
+                <br><br><br>
                 <a href="../../index.html">Home</a>
                 <a href="../sign_in/sign_in.html">Sign In</a>
             </div>
@@ -55,5 +56,6 @@
             <p>Opt Out Request Honored</p>
         </div>
     </footer>
+
 </body>
 </html>
