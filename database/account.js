@@ -34,3 +34,5 @@ async function insert_data() {
         console.log('Data sucessfully inserted')
     }
 }
+
+insert_data()
