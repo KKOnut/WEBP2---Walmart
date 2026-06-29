@@ -1,17 +1,18 @@
 import { supabase } from "../supabaseClient"
 
-export async function send(){
+export async function sign_up(email, first_name, last_name, password){
     const { data, error } = await supabase
     .from('credential')
     .insert([
         {
-            email: '1234@example.com',
-            first_name : 'John',
-            last_name : 'Doe',
-            password : '1234'
+            email: email,
+            first_name : first_name,
+            last_name : last_name,
+            password : password
          }
     ])
     .select()
+
     if (error) {
     console.error('Insert error:', error)
     }
@@ -19,3 +20,6 @@ export async function send(){
         console.log('Insert successful:', data)
     }
 }
+
+
+
