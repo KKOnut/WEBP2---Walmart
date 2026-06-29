@@ -18,8 +18,15 @@ export async function sign_up(email, first_name, last_name, password){
     }
     else {
         console.log('Insert successful:', data)
+        return data
     }
 }
 
+export async function sign_in(email, password) {
+    const { data, error } = await supabase
+    .from("credential")
+    .select(email, password)
+    return data
+}
 
 
