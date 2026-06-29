@@ -11,18 +11,18 @@ a {
 
 @font-face {
     font-family: 'boogle-regular';
-    src: url('fonts/BogleWeb_subset-Regular.ttf') ;
+    src: url('/web/fonts/BogleWeb_subset-Regular.ttf') ;
 }
 
 @font-face {
     font-family: 'boogle-bold';
-    src: url('fonts/BogleWeb_subset-Bold.ttf');
+    src: url('/web/fonts/BogleWeb_subset-Bold.ttf');
 
 }
 
 @font-face {
     font-family: 'ui-font';
-    src: url('fonts/ui-icons.a7ac8dea.ttf');
+    src: url('/web/fonts/ui-icons.a7ac8dea.ttf');
 }
 
 html , body{
@@ -585,7 +585,7 @@ html , body{
 #box-container1{
     height: 15vw;
  
-    background-image: url('Images/box-1 -img.webp');
+    background-image: url('/web/Images/box-1 -img.webp');
     background-size: cover; 
     background-position: center;
     grid-column: 1/ span 5; 
@@ -617,7 +617,7 @@ html , body{
 #box-container2{
     height: 26vw;
     
-    background-image: url('Images/heroimg.webp');
+    background-image: url('/web/Images/heroimg.webp');
     background-size: cover; 
     background-position: center;
     grid-column: 6 / span 10; 
@@ -663,7 +663,7 @@ html , body{
 #box-container3{
     height: 13vw;
     
-    background-image: url('Images/box-3-cha.webp');
+    background-image: url('/web/Images/box-3-cha.webp');
     background-size: cover; 
     background-position: center;
     grid-column: 16 / span 5; 
@@ -695,7 +695,7 @@ html , body{
 
 #box-container4{
     height: 36.4vw;
-    background-image: url('Images/box-4-cha.webp');
+    background-image: url('/web/Images/box-4-cha.webp');
     background-size: cover; 
     background-position: center;
     grid-column:  1/ span 5; 
@@ -730,7 +730,7 @@ html , body{
 #box-container5{
     height: 25.4vw;
 
-    background-image: url('Images/box-8-img.webp');
+    background-image: url('/web/Images/box-8-img.webp');
     background-size: cover;
     background-position: center;
     grid-column: 6 / span 5; 
@@ -761,7 +761,7 @@ html , body{
 
 #box-container6{
     height: 25.4vw;
-    background-image: url('Images/box-9-img.webp');
+    background-image: url('/web/Images/box-9-img.webp');
     background-size: cover;
     background-position: center;
     grid-column: 11/ span 5; 
@@ -798,7 +798,7 @@ html , body{
 #box-container7{
     height: 15vw;
 
-    background-image: url('Images/box-7-img.webp');
+    background-image: url('/web/Images/box-7-img.webp');
     background-size: cover;
     background-position: center;
     grid-column: 16 / span 5; 
@@ -833,7 +833,7 @@ html , body{
 
 #box-container8{
     height: 13vw;
-    background-image: url('Images/box-6-img.webp');
+    background-image: url('/web/Images/box-6-img.webp');
     background-size: cover;
     background-position: center;
     grid-column: 1 / span 5 ; 
@@ -869,7 +869,7 @@ html , body{
 
 #box-container9{
     height: 13vw;
-    background-image: url('Images/box-4-img.webp');
+    background-image: url('/web/Images/box-4-img.webp');
     background-size: cover;
     background-position: center;
     grid-column: 6 / span 10; 
@@ -911,7 +911,7 @@ html , body{
 
 #box-container10{
     height:36.2vw ;
-    background-image: url('Images/box-5-img.webp');
+    background-image: url('/web/Images/box-5-img.webp');
     background-size: cover;
     background-position: center;
     grid-column: 16 / span 5; 
@@ -1250,7 +1250,7 @@ html , body{
     height: 100%;
     width: 90%;
     border-radius: 0.5vw;
-    background-image: url('products image/product-area-baner.webp');
+    background-image: url('/web/products image/product-area-baner.webp');
     background-size: cover;
     display: flex;
     align-items: center;
@@ -1341,7 +1341,7 @@ html , body{
     grid-column: 1 / span 3;
     grid-row:  1/ span 4;
     /* background-color: #051e42 */
-    background-image: url('page5-banner-img/ban-1.webp');
+    background-image: url('/web/page5-banner-img/ban-1.webp');
     background-size: cover;
 }
 
@@ -1389,7 +1389,7 @@ html , body{
 #page5-container2{
     grid-column: 4 / span 4;
     grid-row:  1/ span 2;
-    background-image: url('page5-banner-img/ban-2.webp');
+    background-image: url('/web/page5-banner-img/ban-2.webp');
     background-size: cover;
     
 }
@@ -1434,7 +1434,7 @@ html , body{
     grid-column: 8 / span 2;
     grid-row:  1/ span 4;
 
-    background-image: url('page5-banner-img/ban-3.webp');
+    background-image: url('/web/page5-banner-img/ban-3.webp');
     background-size: cover;
 }
 
@@ -1473,7 +1473,7 @@ html , body{
     grid-column: 4 / span 2;
     grid-row:  3/ span 2;
 
-    background-image: url('page5-banner-img/ban-4.webp');
+    background-image: url('/web/page5-banner-img/ban-4.webp');
     background-size: cover;
 
 }
@@ -1503,7 +1503,7 @@ html , body{
 #page5-container5{
     grid-column: 6 / span 2;
     grid-row:  3/ span 2;
-    background-image: url('page5-banner-img/ban-5.webp');
+    background-image: url('/web/page5-banner-img/ban-5.webp');
     background-size: cover;
 }
 
@@ -1628,7 +1628,7 @@ html , body{
 }
 
 .product2-banner-area{
-    background-image: url('page7-img/banner.webp');
+    background-image: url('/web/page7-img/banner.webp');
     background-size: cover;
     height: 96%;
     width: 90%;
@@ -2679,7 +2679,7 @@ html , body{
 
 #box-container1{
     height: 25vw;
-    background-image: url('Images/box-1 -img.webp');
+    background-image: url('/web/Images/box-1 -img.webp');
     background-size: cover; 
     background-position: center;
     grid-column: 1/ span 1; 
@@ -2715,7 +2715,7 @@ html , body{
 #box-container2{
     height: 55vw;
     
-    background-image: url('Images/heroimg.webp');
+    background-image: url('/web/Images/heroimg.webp');
     background-size: cover; 
     background-position: center;
     grid-column: 1 / span 2; 
@@ -2763,7 +2763,7 @@ html , body{
 #box-container3{
     height: 25vw;
     
-    background-image: url('Images/box-3-cha.webp');
+    background-image: url('/web/Images/box-3-cha.webp');
     background-size: cover; 
     background-position: center;
     grid-column: 2 / span 1; 
@@ -2798,7 +2798,7 @@ html , body{
 
 #box-container4{
     height: 80vw;
-    background-image: url('Images/box-4-cha.webp');
+    background-image: url('/web/Images/box-4-cha.webp');
     background-size: cover; 
     background-position: center;
     grid-column:  2/ span 1; 
@@ -2834,7 +2834,7 @@ html , body{
 #box-container5{
     height: 58vw;
 
-    background-image: url('Images/box-8-img.webp');
+    background-image: url('/web/Images/box-8-img.webp');
     background-size: cover;
     background-position: center;
     grid-column: 1 / span 2; 
@@ -2866,7 +2866,7 @@ html , body{
 
 #box-container6{
     height: 58vw;
-    background-image: url('Images/box-9-img.webp');
+    background-image: url('/web/Images/box-9-img.webp');
     background-size: cover;
     background-position: center;
     grid-column: 1/ span 2; 
@@ -2904,7 +2904,7 @@ html , body{
 #box-container7{
     height: 51.5vw;
 
-    background-image: url('Images/box-7-img.webp');
+    background-image: url('/web/Images/box-7-img.webp');
     background-size: cover;
     background-position: center;
     grid-column: 2/ span 1; 
@@ -2940,7 +2940,7 @@ html , body{
 
 #box-container8{
     height: 52vw;
-    background-image: url('Images/box-6-img.webp');
+    background-image: url('/web/Images/box-6-img.webp');
     background-size: cover;
     background-position: center;
     grid-column: 1 / span 1 ; 
@@ -2979,7 +2979,7 @@ html , body{
 
 #box-container9{
     height: 40vw;
-    background-image: url('Images/box-4-img.webp');
+    background-image: url('/web/Images/box-4-img.webp');
     background-size: cover;
     background-position: center;
     grid-column: 1 / span 2; 
@@ -3021,7 +3021,7 @@ html , body{
 
 #box-container10{
     height: 80vw;
-    background-image: url('Images/box-5-img.webp');
+    background-image: url('/web/Images/box-5-img.webp');
     background-size: cover;
     background-position: center;
     grid-column: 1 / span 1; 
@@ -3369,7 +3369,7 @@ html , body{
     height: 62vw;
     width: 55%;
     border-radius: 1vw;
-    background-image: url('products image/product-area-baner.webp');
+    background-image: url('/web/products image/product-area-baner.webp');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -3462,7 +3462,7 @@ html , body{
     grid-column: 1 / span 2;
     grid-row:  1/ span 3;
     /* background-color: #051e42 */
-    background-image: url('page5-banner-img/ban-1.webp');
+    background-image: url('/web/page5-banner-img/ban-1.webp');
     background-size: cover;
     background-position: center;
 }
@@ -3509,7 +3509,7 @@ html , body{
 #page5-container2{
     grid-column: 1 / span 2;
     grid-row:  4/ span 2;
-    background-image: url('page5-banner-img/ban-2.webp');
+    background-image: url('/web/page5-banner-img/ban-2.webp');
     background-size: cover;
     background-position: center;
     
@@ -3555,7 +3555,7 @@ html , body{
     grid-column: 1 / span 2;
     grid-row:  8/ span 2;
 
-    background-image: url('page5-banner-img/ban-3.webp');
+    background-image: url('/web/page5-banner-img/ban-3.webp');
     background-size: cover;
     background-position: center ;
 }
@@ -3595,7 +3595,7 @@ html , body{
     grid-column: 1 / span 1;
     grid-row:  6/ span 2;
 
-    background-image: url('page5-banner-img/ban-4.webp');
+    background-image: url('/web/page5-banner-img/ban-4.webp');
     background-size: cover;
     background-position: center;
 
@@ -3627,7 +3627,7 @@ html , body{
     height: 70vw;
     grid-column: 2 / span 1;
     grid-row:  6/ span 2;
-    background-image: url('page5-banner-img/ban-5.webp');
+    background-image: url('/web/page5-banner-img/ban-5.webp');
     background-size: cover;
     background-position: center;
 }
@@ -3755,7 +3755,7 @@ html , body{
 }
 
 .product2-banner-area{
-    background-image: url('page7-img/banner.webp');
+    background-image: url('/web/page7-img/banner.webp');
  
     height: 62vw;
     width: 55%;
