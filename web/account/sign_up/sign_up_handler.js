@@ -6,7 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const btn = document.getElementById('btn-create_acc')
     
     if (btn) {
-        btn.addEventListener('click', send)
+        try{
+                btn.addEventListener('click', send)
+            }
+        catch (e){
+            console.error(e)
+        }
     } else {
         console.warn('Button with id "signup-btn" not found on this page.')
     }
