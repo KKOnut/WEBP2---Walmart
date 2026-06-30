@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 await sign_up(email, first_nme, last_name, password)
                 clear()
-                show_messages("Account Succesfully Created!")
-                // window.location.href = '/web/account/sign_in/sign_in.html'
+                show_messages("Account Succesfully Created!") 
+                window.location.href = '/web/account/sign_in/sign_in.html'
             }
             catch (e) {
                 show_messages("Error = " + e)

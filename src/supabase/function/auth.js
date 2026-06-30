@@ -25,8 +25,17 @@ export async function sign_up(email, first_name, last_name, password){
 export async function sign_in(email, password) {
     const { data, error } = await supabase
     .from("credential")
-    .select(email, password)
-    return data
+    .select('email, password')
+    .eq('email', email)
+
+    if (error) {
+        console.error('Fetch data failed :', error)
+    }
+    else {
+        console.log('Fetch data successful!')
+        return data    
+    }
+
 }
 
 

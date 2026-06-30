@@ -1,37 +1,24 @@
-import { sign_up } from '../../../src/supabase/function/auth.js'
-import { show_messages } from '../../../src/utils/helper.js'
-
-
-function clear(){
-    let email = document.getElementById('email')
-    let first_name = document.getElementById('first_name')
-    let last_name = document.getElementById('last_name')
-    let password = document.getElementById('password')
-
-    email.value = ""
-    first_name.value = ""
-    last_name.value = ""
-    password.value = ""
-}
+import { show_messages } from "../../../src/utils/helper"
+import { sign_in } from "../../../src/supabase/function/auth"
 
 document.addEventListener('DOMContentLoaded', () => {
-    const btn = document.getElementById('btn-create_acc')
+    const btn = document.getElementById('btn-sign_in')
 
     if (btn) {
         btn.addEventListener('click', async (e) => {
             try {
-                let user_data = document.querySelectorAll('input')
+                let email = document.getElementById('email').value
+                let email_trimmed = email.trim()
+                let password = document.getElementById('password').value
 
-                let email = user_data[0].value
-                let first_nme = user_data[1].value
-                let last_name = user_data[2].value
-                let password = user_data[3].value
-
-                const test = await sign_up(email, first_nme, last_name, password)
-                console.log(test)
-                clear()
-                show_messages("Account Succesfully Created!")
-                // window.location.href = '/web/account/sign_in/sign_in.html'
+                let user_data = await sign_in(email_trimmed)
+                if (email_trimmed == user_data[0]['email'] && password == user_data[0]['password']) {
+                    show_messages('You are logged in!')
+                    window.location.href = '/index.html'
+                }
+                else {
+                    show_messages("Email or password is wrong. Please try again!")
+                }
             }
             catch (e) {
                 show_messages("Error = " + e)
@@ -39,6 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         })
        
     } else {
-        console.warn('Button with id "signup-btn" not found on this page.')
+        console.warn('Button with id "btn-sign_in" not found on this page.')
     }
 })
