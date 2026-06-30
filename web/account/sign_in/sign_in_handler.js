@@ -12,7 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 let password = document.getElementById('password').value
 
                 let user_data = await sign_in(email_trimmed)
-                if (email_trimmed == user_data[0]['email'] && password == user_data[0]['password']) {
+                if (user_data.length == 0){
+                    show_messages("Email or password is wrong. Please try again!")
+                }
+                else if (email_trimmed == user_data[0]['email'] && password == user_data[0]['password']) {
                     show_messages('You are logged in!')
                     window.location.href = '/index.html'
                 }
